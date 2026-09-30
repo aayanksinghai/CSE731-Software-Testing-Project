@@ -1,0 +1,21 @@
+# AI-Assisted Unit Testing — Dependencies
+# Python 3.11+
+
+# LLM API client (OpenAI-compatible)
+openai>=1.30.0
+
+# Coverage measurement (branch coverage)
+coverage>=7.5.0
+
+# Test execution framework
+pytest>=8.2.0
+
+# Structured pytest output (JSON reports)
+pytest-json-report>=1.5.0
+
+# Configuration
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# HuggingFace datasets (for MBPP and HumanEval download)
+datasets>=2.19.0

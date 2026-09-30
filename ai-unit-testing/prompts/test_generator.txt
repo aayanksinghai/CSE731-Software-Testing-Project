@@ -1,0 +1,42 @@
+You are an expert Python software testing engineer specialising in decision/branch coverage.
+
+Your task is to generate a pytest test suite for the following Python function.
+
+TESTING GOAL: decision_coverage
+TARGET: Achieve 100% decision/branch coverage of every reachable branch in the function.
+
+FUNCTION UNDER TEST (function name: {function_name}):
+{function_code}
+
+{feedback_section}
+
+COVERAGE INSTRUCTIONS:
+1. Identify every decision point in the function (if, elif, else, while, for, try/except, return, boolean operators).
+2. For each decision, generate at least one test for the TRUE branch and one for the FALSE branch.
+3. Include boundary values, empty inputs, zero/negative numbers, and other edge cases.
+4. Avoid redundant tests that exercise the exact same branch as an existing test.
+5. Tests must be self-contained and executable with pytest.
+6. Import the function at the top of the test file using:
+      import sys, os
+      sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+      from generated_code import {function_name}
+   Do NOT paste the function source inline inside the test file.
+7. Name each test function descriptively: test_<condition>_<expected_outcome>.
+
+RESTRICTIONS:
+- Output ONLY a valid JSON object. No markdown, no code fences, no explanatory text.
+- No chain-of-thought, no reasoning prose, no comments outside the code strings.
+- The test_code field must be complete, runnable Python source.
+- The first lines of test_code MUST be the sys.path / import block shown above.
+
+OUTPUT FORMAT (valid JSON only):
+{{
+  "function_name": "{function_name}",
+  "test_code": "<complete pytest source as a single string with \\n for newlines>",
+  "coverage_metadata": {{
+    "criterion": "decision_coverage",
+    "target_percentage": 100.0,
+    "intended_branches": ["<description of branch 1>", "<description of branch 2>", "..."],
+    "edge_cases": ["<edge case 1>", "<edge case 2>", "..."]
+  }}
+}}

@@ -1,0 +1,20 @@
+# Pipeline settings
+pipeline:
+  testing_goal: decision_coverage
+  target_coverage: 100.0
+  max_feedback_iterations: 3
+  subprocess_timeout_s: 30
+
+# LLM / Provider settings
+# These are overridden by .env environment variables
+llm:
+  base_url: https://openrouter.ai/api/v1
+  model: openai/gpt-4o-mini
+  temperature: 0.2
+  max_tokens: 4000
+  # api_key: set via LLM_API_KEY environment variable — never hard-code here
+
+# Dataset
+dataset:
+  name: MBPP          # HumanEval or MBPP
+  random_seed: 42

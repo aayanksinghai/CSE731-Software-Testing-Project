@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.coverage
+htmlcov/
+outputs/
+experiments/
+datasets/mbpp_data.json
+datasets/humaneval_data.json
+*.egg-info/
+dist/
+build/
+.pytest_cache/

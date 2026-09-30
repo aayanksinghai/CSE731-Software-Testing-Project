@@ -1,0 +1,27 @@
+You are an expert Python software engineer.
+
+Your task is to implement a Python function that solves the following programming problem.
+
+PROBLEM DESCRIPTION:
+{problem_description}
+
+FUNCTION NAME TO IMPLEMENT:
+{entry_point}
+
+REQUIREMENTS:
+- Write ONLY the Python function implementation.
+- The function name MUST exactly match: {entry_point}
+- Do NOT include test cases, explanations, or prose.
+- Do NOT include import statements unless absolutely necessary for the function logic.
+- Do NOT include a __main__ block.
+- The implementation must be syntactically valid Python 3.
+- Include meaningful control flow (if/elif/else, loops) where appropriate.
+- Handle edge cases such as empty inputs, zero, negative numbers, or boundary values where relevant.
+
+OUTPUT FORMAT (respond with a valid JSON object only, no markdown, no code fences):
+{{
+  "function_name": "{entry_point}",
+  "code": "<complete Python function source as a single string with \\n for newlines>"
+}}
+
+Do not include chain-of-thought, explanations, or any text outside the JSON object.

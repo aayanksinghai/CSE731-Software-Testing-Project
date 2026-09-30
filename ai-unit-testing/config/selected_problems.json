@@ -1,0 +1,35 @@
+{
+  "description": "Curated subset of MBPP problems selected for meaningful decision/branch coverage. Problems chosen have multiple if/elif branches, loops with conditions, early returns, nested conditions, or boundary-sensitive logic. Trivial problems (simple arithmetic, basic string ops) are excluded.",
+  "dataset": "MBPP",
+  "random_seed": 42,
+  "problem_ids": [
+    "mbpp_2",
+    "mbpp_3",
+    "mbpp_7",
+    "mbpp_8",
+    "mbpp_11",
+    "mbpp_12",
+    "mbpp_14",
+    "mbpp_16",
+    "mbpp_17",
+    "mbpp_18",
+    "mbpp_19",
+    "mbpp_56",
+    "mbpp_57",
+    "mbpp_58",
+    "mbpp_61",
+    "mbpp_62",
+    "mbpp_63",
+    "mbpp_64",
+    "mbpp_67",
+    "mbpp_68"
+  ],
+  "selection_criteria": [
+    "multiple conditional branches (if/elif/else)",
+    "loops with meaningful termination conditions",
+    "early return paths",
+    "nested conditions",
+    "boundary and edge-case sensitive logic",
+    "multiple logical execution paths"
+  ]
+}
